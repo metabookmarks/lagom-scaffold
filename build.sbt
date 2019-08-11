@@ -3,6 +3,8 @@
 // See http://www.foundweekends.org/giter8/testing.html#Using+the+Giter8Plugin for more details.
 lazy val root = (project in file(".")).
   settings(
+     sbtPlugin := true,
+    organization := "io.metabookmarks",
     name := "lagom-scaffold",
     resolvers += Resolver.url("typesafe", url("http://repo.typesafe.com/typesafe/ivy-releases/"))(Resolver.ivyStylePatterns)
   )
